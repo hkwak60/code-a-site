@@ -1,37 +1,52 @@
-// components/StateScenery.jsx
+// src/components/HomePage.jsx
 import React from "react";
+import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import { motion } from "framer-motion";
 
-const images = {
-  California: "/images/yosemite.jpg",
-  Arizona: "/images/grand-canyon.jpg",
-  NewYork: "/images/adirondacks.jpg",
-  // Add more states and image paths here
-};
+const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 
-const StateScenery = ({ stateName, onBack }) => {
-  const image = images[stateName] || "/images/default.jpg";
-
+const App = ({ onStateClick }) => {
   return (
-    <motion.div
-      className="flex flex-col items-center"
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7 }}
-    >
-      <button onClick={onBack} className="mb-4 text-blue-600 hover:underline">
-        &larr; Back to map
-      </button>
-      <h2 className="text-3xl font-semibold mb-4 text-green-800">
-        {stateName}'s Natural Beauty
-      </h2>
-      <img
-        src={image}
-        alt={`${stateName} scenery`}
-        className="rounded-xl shadow-lg max-w-[90vw] max-h-[70vh] object-cover"
-      />
-    </motion.div>
+    <div className="min-h-screen bg-gradient-to-br from-green-100 to-blue-200 flex flex-col items-center p-8">
+      <h1 className="text-5xl font-bold text-green-900 mb-6">
+        Explore U.S. Natural Scenery
+      </h1>
+      <p className="text-lg text-gray-700 mb-4">
+        Click on a state to discover its breathtaking landscapes
+      </p>
+
+      {/* Add map zoom animation */}
+      <motion.div
+        className="bg-white shadow-xl rounded-xl p-4"
+        initial={{ scale: 0.9, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+      >
+        <ComposableMap projection="geoAlbersUsa" width={800} height={500}>
+          <Geographies geography={geoUrl}>
+            {({ geographies }) =>
+              geographies.map((geo) => (
+                <Geography
+                  key={geo.rsmKey}
+                  geography={geo}
+                  onClick={() => onStateClick(geo.properties.name)}
+                  style={{
+                    default: { fill: "#a3d9a5", outline: "none" },
+                    hover: {
+                      fill: "#6fcf97",
+                      outline: "none",
+                      cursor: "pointer",
+                    },
+                    pressed: { fill: "#27ae60", outline: "none" },
+                  }}
+                />
+              ))
+            }
+          </Geographies>
+        </ComposableMap>
+      </motion.div>
+    </div>
   );
 };
 
-export default StateScenery;
+export default App;
