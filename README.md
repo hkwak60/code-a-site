@@ -16,9 +16,19 @@ cd wonders-of
 ```
 ### 2. Install Dependencies
 ```bash
+npm install react@18.2.0 react-dom@18.2.0
 npm install
+cd server
+npm install openai@3.3.0
 ```
-### 3. Start the Development Server
+
+### 3. Start the back-end server
+```bash
+cd server
+npx nodemon server.js
+```
+
+### 4. Start the web
 ```bash
 npm run dev
 ```
