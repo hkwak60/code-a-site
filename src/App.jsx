@@ -1,35 +1,52 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// src/components/HomePage.jsx
+import React from "react";
+import { ComposableMap, Geographies, Geography } from "react-simple-maps";
+import { motion } from "framer-motion";
 
-function App() {
-  const [count, setCount] = useState(0)
+const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 
+const App = ({ onStateClick }) => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+    <div className="min-h-screen bg-gradient-to-br from-green-100 to-blue-200 flex flex-col items-center p-8">
+      <h1 className="text-5xl font-bold text-green-900 mb-6">
+        Explore U.S. Natural Scenery
+      </h1>
+      <p className="text-lg text-gray-700 mb-4">
+        Click on a state to discover its breathtaking landscapes
       </p>
-    </>
-  )
-}
 
-export default App
+      {/* Add map zoom animation */}
+      <motion.div
+        className="bg-white shadow-xl rounded-xl p-4"
+        initial={{ scale: 0.9, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+      >
+        <ComposableMap projection="geoAlbersUsa" width={800} height={500}>
+          <Geographies geography={geoUrl}>
+            {({ geographies }) =>
+              geographies.map((geo) => (
+                <Geography
+                  key={geo.rsmKey}
+                  geography={geo}
+                  onClick={() => onStateClick(geo.properties.name)}
+                  style={{
+                    default: { fill: "#a3d9a5", outline: "none" },
+                    hover: {
+                      fill: "#6fcf97",
+                      outline: "none",
+                      cursor: "pointer",
+                    },
+                    pressed: { fill: "#27ae60", outline: "none" },
+                  }}
+                />
+              ))
+            }
+          </Geographies>
+        </ComposableMap>
+      </motion.div>
+    </div>
+  );
+};
+
+export default App;
