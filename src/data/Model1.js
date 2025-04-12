@@ -164,11 +164,11 @@ export default class Model {
         {
           park: 'Channel Islands',
           image: [
-            '/images/channelLslands.jpg',
-            '/images/channelLslands2.jpg',
-            '/images/channelLslands3.jpg',
-            '/images/channelLslands4.jpg',
-            '/images/channelLslands5.jpg',
+            '/images/channelIslands.jpg',
+            '/images/channelIslands2.jpg',
+            '/images/channelIslands3.jpg',
+            '/images/channelIslands4.jpg',
+            '/images/channelIslands5.jpg',
           ],
           description: 'Remote islands with unique wildlife and sea caves.',
         },
