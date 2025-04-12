@@ -648,12 +648,8 @@ export default class Model {
       Texas: [
         {
           park: 'Big Bend National Park',
-          image: '',
-          description: [
-            'public/images/f2f14d38-726f-4e67-9a0d-225e5ae593c9Original.jpg',
-            'public/images/2F818546-155D-451F-67B8EE1E8AD16041Original.jpg',
-            'public/images/ED89E87C-155D-451F-674819921EE03FC8Original.jpg',
-          ],
+          image: ['public/images/f2f14d38-726f-4e67-9a0d-225e5ae593c9Original.jpg', 'public/images/2F818546-155D-451F-67B8EE1E8AD16041Original.jpg', 'public/images/ED89E87C-155D-451F-674819921EE03FC8Original.jpg'],
+          description: 'A remote and rugged park along the Rio Grande, Big Bend offers stunning desert landscapes, canyons, and star-filled night skies.',
         },
       ],
       Utah: [
