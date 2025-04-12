@@ -4,7 +4,7 @@ export default class Model {
       Nebraska: [
         {
           park: 'Agate Fossil Beds National Monument',
-          image: '',
+          image: ['public/images/c7d4ef80-97a3-4ede-8aa2-987045e44370Original', 'public/images/56310939-155D-4519-3E47F495CC1A987COriginal', 'public/images/56329AD2-155D-4519-3E6A550E80E4A151Original'],
           description: 'Preserves Miocene-era fossil beds and Native American artifacts.',
         },
         {
@@ -16,102 +16,92 @@ export default class Model {
       Nevada: [
         {
           park: 'Great Basin National Park',
-          image: '',
+          image: ['public/images/1E0B02B9-155D-4519-3EF88574F426DB4AOriginal', 'GBNP6_SM-opt.jpg', 'public/images/1140-great-basin-hero', 'public/images/Wheeler-Peak-Great-Basin-National-Park-Nev'],
           description: 'Features ancient bristlecone pines and the Lehman Caves.',
         },
       ],
       NewHampshire: [
         {
           park: 'Saint-Gaudens National Historical Park',
-          image: '',
+          image: ['public/images/white-mountain-forest-nh', 'public/images/Perch-Pond-Campton-New-Hampshire', 'public/images/premium_photo-1696273224379-ecac4777c6cc', 'public/images/mount-chocorua'],
           description: 'Home and studios of sculptor Augustus Saint-Gaudens.',
         },
       ],
       NewJersey: [
         {
-          park: 'Thomas Edison National Historical Park',
-          image: '',
-          description: 'Preserves the laboratory and residence of inventor Thomas Edison.',
+          park: 'Delaware Water Gap National Recreation Area',
+          image: 'public/images/8F6C2116-1DD8-B71B-0B263EA6BB948F8FOriginal',
+          description: 'Offers scenic river valleys and forested mountains along the Delaware River.',
         },
         {
-          park: 'Delaware Water Gap National Recreation Area',
-          image: '',
-          description: 'Offers scenic river valleys and forested mountains along the Delaware River.',
+          park: '',
+          image: ['public/images/images3', 'public/images/main_1500'],
+          description: '',
         },
       ],
       NewMexico: [
         {
           park: 'Carlsbad Caverns National Park',
-          image: '',
+          image: ['public/images/FCFF7F5D-155D-451F-678B0E5CBAD91FBBOriginal', 'public/images/D1777EDC-155D-451F-67B1CADB531E5FE0Original'],
           description: 'Renowned for its vast underground limestone chambers.',
         },
         {
           park: 'White Sands National Park',
-          image: '',
+          image: ['public/images/New-Mexico-White-Sands-GettyImages-1026457358', 'public/images/0-HERO-Shutterstock-123300241'] ,
           description: 'Features expansive dunes of white gypsum sand.',
         },
       ],
       NewYork: [
         {
           park: 'Gateway National Recreation Area',
-          image: '',
+          image: ['public/images/3f405a39-a44c-4faa-adac-c7e1e7d17c5fOriginal', 'public/images/58514091-8c95-4bb3-b384-cac63d584bdcOriginal', 'public/images/06f4c065-90e7-4468-8d97-95cc848c1c09Original'],
           description: 'Urban park offering beaches, wildlife habitats, and historic sites.',
-        },
-        {
-          park: 'Saratoga National Historical Park',
-          image: '',
-          description: 'Site of the pivotal 1777 Revolutionary War battle.',
         },
       ],
       NorthCarolina: [
         {
           park: 'Great Smoky Mountains National Park',
-          image: '',
+          image: ['public/images/e47c93eb-29da-4cdd-9d30-4fcee8e144eaOriginal', 'public/images/2cc5f989-a181-402a-a79b-bae9ceefe2c6Original'],
           description: 'Known for its biodiversity and mist-covered mountains.',
         },
         {
           park: 'Blue Ridge Parkway',
-          image: '',
+          image: ['public/images/f7dcd8d4-c49c-45f3-886c-f5c65d60dc9eOriginal', 'public/images/cc1e6966-c0ef-4159-8472-51e03a5458ebOriginal', 'public/images/86caa397-1697-4d64-a5f0-570752bbcccdOriginal'],
           description: 'Scenic drive through the Appalachian Highlands.',
         },
       ],
       NorthDakota: [
         {
           park: 'Theodore Roosevelt National Park',
-          image: '',
+          image: ['public/images/F309C7D7-1DD8-B71B-0B3CF4B8D2F63FE2Original', 'public/images/F37A21EC-1DD8-B71B-0BB4713868D4BC53Original', 'public/images/CBAF1F2F-1DD8-B71B-0B09D6D4AE15BDC1Original', 'public/images/3558A4A3-1DD8-B71B-0B30395F96A0174COriginal', 'public/images/5E1EF2B2-1DD8-B71B-0BA7775A32027DA3Original', 'public/images/2D5A6293-1DD8-B71B-0BF25C14A5AF4951Original'],
           description: 'Badlands terrain honoring the conservationist president.',
         },
       ],
       Ohio: [
         {
           park: 'Cuyahoga Valley National Park',
-          image: '',
+          image: ['public/images/9fb07b18-b834-4852-922c-18453c90f96bOriginal', 'public/images/b9a612fb-69c3-41e0-a100-c03c64582289Original', 'public/images/OH_EOA-Strait-Creek_Dana-Ohman-TNC', 'public/images/MG_1433_Boord_August-29-2009'],
           description: 'Protects rural landscapes along the Cuyahoga River.',
         },
       ],
       Oklahoma: [
         {
-          park: 'Chickasaw National Recreation Area',
-          image: '',
-          description: 'Known for its mineral springs and recreational lakes.',
-        },
-        {
-          park: 'Washita Battlefield National Historic Site',
-          image: '',
-          description: 'Commemorates the 1868 attack on a Cheyenne village.',
+          park: '',
+          image: ['public/images/IMG_8082-BlackMesa-RyanWest', 'public/images/AdobeStock_547115337-min-scaled', 'public/images/deep-fork2', 'public/images/oklahoma-scenery-photography'],
+          description: '',
         },
       ],
       Oregon: [
         {
           park: 'Crater Lake National Park',
-          image: '',
+          image: ['public/images/C10C6001-1DD8-B71B-0BFD2BF08855BB8COriginal', 'public/images/C05B33BB-1DD8-B71B-0B4EA29F6313D9A4Original', 'public/images/C1AE9215-1DD8-B71B-0B8CCCFA5F9BD50COriginal', 'public/images/C0B3D269-1DD8-B71B-0B6CFA07696DBA9COriginal'],
           description: 'Home to the deepest lake in the U.S., formed in a volcanic caldera.',
         },
       ],
       Pennsylvania: [
         {
-          park: 'Valley Forge National Historical Park',
-          image: '',
+          park: '',
+          image: ['public/images/west_branch_pade', 'public/images/IMG_4805'],
           description: 'Encampment site of the Continental Army during the Revolutionary War.',
         },
       ],
