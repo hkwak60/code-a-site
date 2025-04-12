@@ -76,6 +76,23 @@ function MainPage() {
     return null;
   };
 
+  const toggleParkDescription = async (parkName, index) => {
+    if (openParkIndex === index) {
+      setOpenParkIndex(null);
+      return;
+    }
+    if (!parkDescriptions[parkName]) {
+      const res = await fetch('http://localhost:8000/park-description', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ parkName })
+      });
+      const data = await res.json();
+      setParkDescriptions((prev) => ({ ...prev, [parkName]: data.description }));
+    }
+    setOpenParkIndex(index);
+  };
+
   return (
     <Wrapper className="relative min-h-screen bg-[#FAFAF7] text-[#0F0F0F] flex flex-col items-center justify-center px-4 py-10 overflow-hidden">
       {fromWelcome && (
@@ -153,7 +170,7 @@ function MainPage() {
             >
               ×
             </button>
-            <svg viewBox="0 0 1000 600" className="w-full h-32">
+            <svg viewBox="0 0 3000 2000" className="w-full h-32">
               <path
                 d={geoPath().projection(projection)(selectedGeo)}
                 fill="#2ecc71"
