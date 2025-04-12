@@ -360,13 +360,7 @@ export default class Model {
         },
         {
           park: 'Hawaiʻi Volcanoes',
-          image: [
-            '/images/hawaiiVolcano.jpg',
-            // '/images/hawaiiVolcano2.jpg',
-            // '/images/hawaiiVolcano3.jpg',
-            // '/images/hawaiiVolcano4.jpg',
-            // '/images/hawaiiVolcano5.jpg',
-          ],
+          image: ['/images/hawaiiVolcano.jpg'],
           description: 'Active volcanoes shaping the Big Island.',
         },
       ],
