@@ -22,13 +22,13 @@ cd server
 npm install openai@3.3.0
 ```
 
-### 3. Start the back-end server
+### 3. Start the back-end server (wonders-of/server)
 ```bash
 cd server
 npx nodemon server.js
 ```
 
-### 4. Start the web
+### 4. Start the web (wonders-of)
 ```bash
 npm run dev
 ```
