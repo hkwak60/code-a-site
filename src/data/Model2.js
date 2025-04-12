@@ -111,12 +111,6 @@ export default class Model {
           image: ['public/images/RI-CTA-tncrhodeisland_93711283'],
           description: 'Honors the founder of Rhode Island and advocate for religious freedom.',
         },
-        {
-          park: 'Roger Williams National Memorial',
-          image: ['public/images/'],
-          description: 'Honors the founder of Rhode Island and advocate for religious freedom.',
-        },
-        
       ],
       SouthCarolina: [
         {
@@ -145,11 +139,6 @@ export default class Model {
           image: '',
           description: ['public/images/f2f14d38-726f-4e67-9a0d-225e5ae593c9Original', 'public/images/2F818546-155D-451F-67B8EE1E8AD16041Original', 'public/images/ED89E87C-155D-451F-674819921EE03FC8Original'],
         },
-        {
-          park: 'Guadalupe Mountains National Park',
-          image: '',
-          description: 'Home to the highest peak in Texas and fossil-rich mountains.',
-        },
       ],
       Utah: [
         {
@@ -159,22 +148,22 @@ export default class Model {
         },
         {
           park: 'Bryce Canyon National Park',
-          image: ['public/images/'],
+          image: ['public/images/629cc2bf-10e5-4c76-bbec-a08a6edc24c4Original', 'public/images/3678249e-29ca-4116-bbf4-7f84ffda5120Original'],
           description: 'Famous for its unique hoodoo rock formations.',
         },
         {
           park: 'Canyonlands National Park',
-          image: ['public/images/'],
+          image: ['public/images/751ed525-99cc-4369-9634-87de8df771f8Original', 'public/images/46e36d5f-c27f-4cc0-bada-89a538f17d95Original'],
           description: 'Features dramatic desert landscape carved by the Colorado River.',
         },
         {
           park: 'Capitol Reef National Park',
-          image: ['public/images/'],
+          image: ['public/images/5cf20fff-5e78-471e-9b2e-32036a1fd11eOriginal', 'public/images/2c8bfa34-737d-42da-81f0-9a4e130db2aaOriginal'],
           description: 'Known for its colorful canyons and the Waterpocket Fold.',
         },
         {
           park: 'Zion National Park',
-          image: ['public/images/'],
+          image: ['public/images/BC48EDCD-155D-451F-6731677C817083AFOriginal', 'public/images/9863D408-155D-451F-67DF89CC4A0175B1Original', 'public/images/96C5D7EA-155D-451F-6750431381E7FEEAOriginal', 'public/images/86caa397-1697-4d64-a5f0-570752bbcccdOriginal', 'public/images/27DC888C-155D-451F-679F78246BF2BF63Original'],
           description: 'Offers towering sandstone cliffs and narrow slot canyons.',
         },
       ],
@@ -207,27 +196,43 @@ export default class Model {
       WestVirginia: [
         {
           park: 'New River Gorge National Park and Preserve',
-          image: ['public/images/C2EF416C-1DD8-B71B-0BC241739294EB03Original', 'public/images/3f422525-8835-462a-8cbf-8d701c066ac0Original', 'public/images/622B5627-155D-451F-674BA8A3B60EF98DOriginal'],
-          description: '',
+          image: [
+            'public/images/C2EF416C-1DD8-B71B-0BC241739294EB03Original',
+            'public/images/3f422525-8835-462a-8cbf-8d701c066ac0Original',
+            'public/images/622B5627-155D-451F-674BA8A3B60EF98DOriginal',
+          ],
+          description:
+            'Known for its stunning sandstone cliffs and one of the oldest rivers in North America, New River Gorge offers world-class rock climbing, whitewater rafting, and scenic hiking trails.',
         },
       ],
       Wisconsin: [
         {
           park: 'Apostle Islands National Lakeshore',
-          image: ['public/images/Apostle-Islands-Cornucopia-Wi2-Chad-Briesemeister-scaled', 'public/images/Apostle-Islands-WI-Lorinda-Niemi', 'public/images/ white-pines.-great-rocks-for-jumping-in-apostle-islands'],
-          description: '',
+          image: [
+            'public/images/Apostle-Islands-Cornucopia-Wi2-Chad-Briesemeister-scaled',
+            'public/images/Apostle-Islands-WI-Lorinda-Niemi',
+            'public/images/ white-pines.-great-rocks-for-jumping-in-apostle-islands',
+          ],
+          description:
+            'Apostle Islands are known for their sea caves, clear waters, and historic lighthouses. Visitors enjoy kayaking, sailing, and exploring the islands’ serene natural beauty on Lake Superior.',
         },
       ],
       Wyoming: [
         {
           park: 'Grand Teton National Park',
           image: ['public/images/2880x1620-featured-image-grand-tetons-scaled'],
-          description: '',
+          description:
+            'Grand Teton National Park features dramatic mountain landscapes, pristine lakes, and abundant wildlife. Popular activities include hiking, photography, and alpine climbing.',
         },
         {
           park: 'Yellowstone National Park',
-          image: ['public/images/Yellowstone+Magma_hero', 'public/images/Yellowstone_River_in_Hayden_Valley', 'public/images/07_yellowstone'],
-          description: '',
+          image: [
+            'public/images/Yellowstone+Magma_hero',
+            'public/images/Yellowstone_River_in_Hayden_Valley',
+            'public/images/07_yellowstone',
+          ],
+          description:
+            'The first national park in the world, Yellowstone is famous for its geysers, hot springs, and diverse ecosystems. Highlights include Old Faithful, Yellowstone Lake, and rich wildlife like bison and bears.',
         },
       ],
     };
