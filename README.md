@@ -72,7 +72,7 @@ vite@^6.2.0
 
 ## 👨‍👩‍👧‍👦 Team
 
-- [**Hojun Kwak**](https://github.com/hojunkwak) – Project Manager
+- [**Hojun Kwak**](https://github.com/hkwak60) – Project Manager
 - [**Daniel Yun**](https://github.com/YUNBLAK) – Front-End Developer  
 - [**Dahyun Eom**](https://github.com/dahyun-eom) – Data Specialist  
 - [**Sooa Kim**](https://github.com/SooaKim4074) – Data Specialist
